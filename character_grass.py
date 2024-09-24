@@ -12,28 +12,29 @@ boy = load_image('character.png')
 
 def draw_boy(x,y):
     clear_canvas_now()
+    grass.draw_now(400,30)
     boy.draw_now(x,y)
     delay(0.01)
 
 def run_top():
     print('TOP')
-    for y in range(0,600 -1,10):
+    for y in range(0,600 -90 -1,10):
         draw_boy(0 +10,y)
 
 def run_right():
     print('RIGHT')
-    for x in range(0,800 -1,10):
+    for x in range(0,800 -90 -1,10):
         draw_boy(x,600-10)
 
 def run_bottom():
     print('BOTTOM')
-    for y in range(600,0 +1,-10):
+    for y in range(600,0 +90 +1,-10):
         draw_boy(800 -10,y)
         
 def run_left():
     print('LEFT')
-    for x in range(800,0 +1,-10):
-        draw_boy(x, 0 +10)
+    for x in range(800,0 +90 +1,-10):
+        draw_boy(x, 0 +90)
 
 def run_rectangle():
     print('RECTANGLE')
@@ -54,23 +55,23 @@ def run_circle():
 def run_right_triangle():
     print('run_right_triangle')
     for x in range(0,800 -1,10):
-        draw_boy(x, +10)
+        draw_boy(x, +90)
     pass
 
 def run_high_triangle():
     print('run_high_triangle')
     for d in range(0,100):
         x = 800 - (800//2)//100*d
-        y = 0 + 600//100*d
-        draw_boy(x,y -10)
+        y = 90 + 600//100*d
+        draw_boy(x,y)
     pass
 
 def run_left_triangle():
     print('run_left_triangle')
     for d in range(0,100):
         x = 800//2 - (800//2)//100*d
-        y = 600 - 600//100*d
-        draw_boy(x,y +10)
+        y = 90 + 600 - 600//100*d
+        draw_boy(x,y)
     pass
 
 
