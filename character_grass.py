@@ -10,8 +10,21 @@ open_canvas()
 grass = load_image('grass.png')
 boy = load_image('character.png')
 
+def run_top():
+    pass
+def tun_right():
+    pass
+def run_bottom():
+    pass
+def run_left():
+    pass
+
 def run_rectangle():
     print('RECTANGLE')
+    run_top()
+    run_right()
+    run_bottom()
+    run_left()
     pass
 
 def run_circle():
@@ -25,9 +38,6 @@ def run_circle():
         clear_canvas_now()
         boy.draw_now(x,y)
         delay(0.1)
-    
-    pass
-
 
 while True:
     #run_rectangle()
