@@ -50,9 +50,22 @@ def run_circle():
         x = r*math.cos(math.radians(d)) + cx
         y = r*math.sin(math.radians(d)) + cy
         draw_boy(x,y)
+def run_right_triangle():
+    print('run_right_triangle')
+    pass
+def run_high_triangle():
+    print('run_high_triangle()')
+    pass
+def run_left_triangle():
+    print('run_left_triangle()')
+    pass
+
 
 def run_triangle():
     print('TRICANGLE')
+    run_right_triangle()
+    run_high_triangle()
+    run_left_triangle()
     pass
 
 while True:
