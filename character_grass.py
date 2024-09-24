@@ -19,23 +19,21 @@ def run_top():
     print('TOP')
     for y in range(0,600 -1,10):
         draw_boy(0 +10,y)
-    pass
+
 def run_right():
     print('RIGHT')
     for x in range(0,800 -1,10):
         draw_boy(x,600-10)
-    pass
 
 def run_bottom():
     print('BOTTOM')
     for y in range(600,0 +1,-10):
         draw_boy(800 -10,y)
-    pass
+        
 def run_left():
     print('LEFT')
     for x in range(800,0 +1,-10):
         draw_boy(x, 0 +10)
-    pass
 
 def run_rectangle():
     print('RECTANGLE')
@@ -43,7 +41,6 @@ def run_rectangle():
     run_right()
     run_bottom()
     run_left()
-    pass
 
 def run_circle():
     print('CIRCLE')
@@ -54,9 +51,14 @@ def run_circle():
         y = r*math.sin(math.radians(d)) + cy
         draw_boy(x,y)
 
+def run_triangle():
+    print('TRICANGLE')
+    pass
+
 while True:
-    run_rectangle()
+    #run_rectangle()
     #run_circle()
+    run_triangle()
     break
 
 clear_canvas_now()
