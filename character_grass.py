@@ -54,7 +54,7 @@ def run_circle():
 def run_right_triangle():
     print('run_right_triangle')
     for x in range(0,800 -1,10):
-        draw_boy(x, 90)
+        draw_boy(x, +10)
     pass
 
 def run_high_triangle():
@@ -85,7 +85,6 @@ while True:
     run_rectangle()
     run_circle()
     run_triangle()
-    break
 
 clear_canvas_now()
 
